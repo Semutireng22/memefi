@@ -34,11 +34,23 @@
 | **USE_PROXY_FROM_FILE**   | Apakah menggunakan proxy dari file `bot/config/proxies.txt` (True / False)             |
 
 ## Instalasi
+
+Install Screen
+```shel
+sudo apt install screen -y
+```
+```shell
+screen -S memefi
+```
+
 Anda dapat mengunduh [**Repositori**](https://github.com/Semutireng22/memefi) dengan mengkloningnya ke sistem Anda dan menginstal dependensi yang diperlukan:
 ```shell
 git clone https://github.com/Semutireng22/memefi.git
-cd MemeFiBot
 ```
+```shell
+cd memefi
+```
+ 
 
 #Linux
 
@@ -46,9 +58,17 @@ Install Python3.10
 
 ```shell
 sudo apt update
+```
+```shell
 sudo apt install software-properties-common -y
+```
+```shell
 sudo add-apt-repository ppa:deadsnakes/ppa -y
+```
+```shell
 sudo apt update
+```
+```shell
 sudo apt install python3.10 python3.10-venv python3.10-dev -y
 ```
 
@@ -64,6 +84,9 @@ pip3 install -r requirements.txt
 ```shell
 cp .env-example .env
 ```
+
+__Ambil API_ID dan HASH_ID di https://my.telegram.org/auth?to=apps__
+
 ```shell
 nano .env
 ```
